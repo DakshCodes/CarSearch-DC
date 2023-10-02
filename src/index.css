@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  /* background-color: #212121; */
+  font-family: 'Arial', sans-serif;
+}
+
+.car-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 1vw;
+  gap: 11vw;
+  justify-content: center;
+}
+
+.car-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  width: calc(33.33% - 20px);
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+
+.pagination button {
+  margin: 0 5px !important;
+  padding: 5px 10px !important;
+  cursor: pointer !important;
+}
+
+.pagination button.active {
+  background-color: #007bff !important;
+  color: white !important;
+}
